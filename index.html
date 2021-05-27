@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+</head>
+
+<body style="padding: 0 10px;">    
+    <script async src="main.js"></script> 
+    <h1 style="text-align: center;">Lession 1</h1>
+    <h2 style="margin: 20px 0;">Ex. 1</h2>
+    <form action="#">
+        <p>Введите температуру в гр. цельсия</p>
+        <input type="text" id="valueInput" pattern="\d+([\.,]\d)?" required>
+        <br>
+        <button onclick="convert()" style="margin-top: 20px;">Конвертировать</button>
+    </form>
+    <hr style="margin: 30px 0;">
+    <h2 style="margin: 20px 0">Ex. 2</h2>
+    <form action="#">
+        <button onclick="displayName()">Как зовут админа?</button>
+        <p style="opacity: 0; transition: 1s;" id="adminName"></p>
+    </form>
+    <hr style="margin: 30px 0;">
+    <h2 style="margin: 20px 0">Ex. 3</h2>
+    <form action="#">
+        <button onclick="diffTypes()">Чему будет равно JS-выражение 1000 + "108"?</button>
+        <p style="opacity: 0; transition: 1s;" id="diffTypesValue"></p>
+    </form>
+    <hr style="margin: 30px 0;">
+    <h2 style="margin: 20px 0">Ex. 4</h2>
+    <form action="#">
+        <p>
+            async - асинхронное выполнение скриптов (тобишь они будут выполняться не последовательно, а, как бы, все
+            разом)
+            <br>
+            defer - выполнение скриптов будет происходить последовательно
+            <br><br>
+            Фишка в том, что при объявлении async страница будет подгружаться независимо от скрипта.
+            То есть, если на странице есть какая-то важная информация, она не будет дожидаться подгрузки скрипта,
+            расположенного перед ней.
+            Скрипт появится когда сам подгрузится и не будет тормозить отображение странички.
+            <br><br>
+            В случае с defer всё будет происходить последовательно. Если скрипт находится, положим, перед картинкой, то картинка отобразится только тогда, когда скрипт будет подгружен.
+            <br><br>
+            <small>Не уверен, но, видимо, этот атрибут дефолтный. </small>
+        </p>
+    </form>       
+</body>
+
+</html>
