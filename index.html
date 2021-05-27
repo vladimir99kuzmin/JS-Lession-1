@@ -14,7 +14,7 @@
     <h2 style="margin: 20px 0;">Ex. 1</h2>
     <form action="#">
         <p>Введите температуру в гр. цельсия</p>
-        <input type="text" id="valueInput" pattern="\d+([\.,]\d)?" required>
+        <input type="text" id="valueInput" pattern="\d+([\.,]\d{1,})?" required>
         <br>
         <button onclick="convert()" style="margin-top: 20px;">Конвертировать</button>
     </form>
